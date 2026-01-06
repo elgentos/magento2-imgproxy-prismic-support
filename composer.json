@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Elgentos\\ImgproxyPrismicSupport\\": "src/"
+            "Elgentos\\ImgproxyPrismicSupport\\": ""
         },
         "files": [
             "src/registration.php"
