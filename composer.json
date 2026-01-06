@@ -1,0 +1,33 @@
+{
+    "name": "elgentos/magento2-imgproxy-prismic-support",
+    "description": "Integration between Elgentos Imgproxy and Prismic IO modules for Magento 2",
+    "type": "magento2-module",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "elgentos ecommerce solutions",
+            "email": "info@elgentos.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "elgentos/magento2-imgproxy": "*",
+        "elgentos/module-prismicio": "*",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elgentos\\ImgproxyPrismicSupport\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mirror.mage-os.org/"
+        }
+    ]
+}
