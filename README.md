@@ -1,10 +1,12 @@
-# Elgentos ImgproxyPrismicSupport
+# elgentos/magento2-imgproxy-prismic-support
 
-Integration module that connects the Elgentos Imgproxy and Prismic IO modules for Magento 2.
+Integration module that connects the [elgentos/magento2-imgproxy](https://github.com/elgentos/magento2-imgproxy) and the [elgentos/magento2-prismicio](https://github.com/elgentos/magento2-prismicio) extensions for Magento 2.
 
 ## What it does
 
-Automatically transforms Prismic CDN image URLs through imgproxy before rendering, enabling:
+Automatically transforms Prismic CDN image URLs through imgproxy before rendering, with the main goal of Prismic API usage reduction.
+
+These are also benefits, but these are also handled by Prismic (which uses Imgix internally);
 - On-the-fly image optimization
 - Responsive image sizing
 - Format conversion (WebP, AVIF)
