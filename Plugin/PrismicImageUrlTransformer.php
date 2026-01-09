@@ -57,6 +57,12 @@ class PrismicImageUrlTransformer
                 return;
             }
 
+            // Skip transformation if URL is already an imgproxy URL (prevent double-wrapping)
+            $imgproxyHost = $this->config->getImgproxyHost();
+            if (!empty($imgproxyHost) && strpos($context->url, $imgproxyHost) !== false) {
+                return;
+            }
+
             // Extract dimensions as integers
             $width = (int) $context->dimensions->width;
             $height = (int) $context->dimensions->height;
