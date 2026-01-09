@@ -21,7 +21,7 @@
             "Elgentos\\ImgproxyPrismicSupport\\": ""
         },
         "files": [
-            "src/registration.php"
+            "registration.php"
         ]
     },
     "repositories": [
