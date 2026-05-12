@@ -44,8 +44,12 @@ class PrismicImageUrlTransformer
             // Retrieve the context object (stdClass with url, alt, dimensions properties)
             $context = $subject->getContext();
 
+            if (!isset($context->url)) {
+                return;
+            }
+            
             // Validate required properties exist
-            if (!isset($context->url) || !isset($context->dimensions->width) || !isset($context->dimensions->height)) {
+            if (!isset($context->dimensions->width) || !isset($context->dimensions->height)) {
                 $this->logger->warning(
                     '[IMGPROXY-PRISMIC] Context missing required properties for image transformation.',
                     [
